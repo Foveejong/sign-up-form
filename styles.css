@@ -116,7 +116,8 @@ fieldset {
 
 .right .right-middle {
     background-color: white;
-    height: 32vh;
+    height: max(32vh, 180px);
+    box-shadow: rgb(202, 203, 203) 5px 5px 10px;
 }
 
 .form-container {
@@ -130,11 +131,16 @@ fieldset {
     flex-direction: column;
 }
 
+label {
+    letter-spacing: 0.2ch;
+}
+
 input {
     width: 250px;
     min-height: 4ch;
     border: 2px #E5E7EB solid;
     border-radius: 5px;
+    padding-left: 5px; /* adds small space before user input */
 }
 /* 
 @media screen and (max-width: 800px) {
