@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -28,42 +29,48 @@
                 </p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <div class="right-middle">
-                <div class="form-container">
-                    <fieldset>
-                        <legend><p>Let's do this!</p></legend>
-                        <div class="inner-left">
-                            <div class="item-pair">
-                                <label for="firstname">FIRST NAME</label>
-                                <input type="text" id="firstname" name="firstname" required placeholder="Thor">
+            <form action="" method="POST">
+                <div class="right-middle">
+                    <div class="form-container">
+                        <fieldset>
+                            <legend><p>Let's do this!</p></legend>
+                            <div class="inner-left">
+                                <div class="item-pair">
+                                    <label for="firstname">FIRST NAME</label>
+                                    <input type="text" id="firstname" name="firstname" required placeholder="Thor">
+                                </div>
+                                <div class="item-pair">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email" required placeholder="___@gmail.com">
+                                </div>
+                                <div class="item-pair">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" required placeholder="Password"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&~`])[A-Za-z\d@$!%*?&~`]{8,}$">
+                                </div>
                             </div>
-                            <div class="item-pair">
-                                <label for="email">EMAIL</label>
-                                <input type="text" id="email" name="email" required placeholder="___@gmail.com">
+                            <div class="inner-right">
+                                <div class="item-pair">
+                                    <label for="lastname">LAST NAME</label>
+                                    <input type="text" id="lastname" required name="lastname" placeholder="Odinson">
+                                </div>
+                                <div class="item-pair">
+                                    <label for="phone">PHONE NUMBER</label>
+                                    <input type="tel" id="phone" required value="+65" name="phone" placeholder="Phone Number">
+                                </div>
+                                <div class="item-pair">
+                                    <label for="confirmer">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirmer" name="confirmer" placeholder="Confirm Password" required>
+                                </div>
                             </div>
-                            <div class="item-pair">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password" required>
-                            </div>
-                        </div>
-                        <div class="inner-right">
-                            <div class="item-pair">
-                                <label for="lastname">LAST NAME</label>
-                                <input type="text" id="lastname" required name="lastname" placeholder="Odinson">
-                            </div>
-                            <div class="item-pair">
-                                <label for="phone">PHONE NUMBER</label>
-                                <input type="tel" id="phone" required value="+65" name="phone">
-                            </div>
-                            <div class="item-pair">
-                                <label for="confirmer">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirmer" name="confirmer" required>
-                            </div>
-                        </div>
-                    </fieldset>
+                        </fieldset>
+                    </div>
                 </div>
-            </div>
-            <div class="right-footer"></div>
+                <div class="right-footer">
+                    <button type="submit">Create Account</button>
+                    <p class="footer-question">Already have an account? <span>Log in</span></p>
+                </div>
+            </form>
         </div>
     </div>
 </body>
