@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --margin-left: 5vh;
+}
+
 @font-face {
     font-family: Norse-bold;
     src: url(./fonts/Norse-Bold.otf);
@@ -17,7 +21,7 @@
 .left {
     background-image: url(./images/blake-harbison-unsplash.jpg);
     background-size: cover;
-    width: max(250px, 33vw);
+    width: max(250px, 40vw);
 }
 
 .left-title {
@@ -64,3 +68,40 @@
         font-family: Norse-bold;
     }
 }
+
+.right {
+    width: 60vw;
+    background-color: rgb(245, 245, 245);
+}
+
+fieldset {
+    border: none;
+}
+
+.right-header {
+    padding-left: var(--margin-left);
+    padding-bottom: 8vh;
+    height: 40vh;
+    width: 85ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5vh;
+
+    & p {
+        font-size: 3vh;
+    }
+}
+
+/* .right .right-middle {
+    background-color: white;
+    height: 30vh;
+} */
+
+/* .form-container {
+    margin-top: 5vh;
+} */
+/* 
+@media screen and (max-width: 800px) {
+
+} */
