@@ -155,7 +155,7 @@ input:invalid {
     outline: none;
 }
 
-input:empty {
+input[type] {
     border-color: #E5E7EB;
     outline: none;
 }
@@ -179,7 +179,6 @@ button[type="submit"] {
     color: #596D48;
     font-weight: 800;
 }
-
 
 
 /* 

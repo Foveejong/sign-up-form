@@ -46,7 +46,7 @@
                                 <div class="item-pair">
                                     <label for="password">PASSWORD</label>
                                     <input type="password" id="password" name="password" required placeholder="Password"
-                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&~`])[A-Za-z\d@$!%*?&~`]{8,}$">
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&~`])[A-Za-z\d@$!%*?&~`]{8,}$" title="At least 1 Uppercase, 1 Lowercase, 1 Special Character and at least 8 Characters">
                                 </div>
                             </div>
                             <div class="inner-right">
@@ -61,6 +61,7 @@
                                 <div class="item-pair">
                                     <label for="confirmer">CONFIRM PASSWORD</label>
                                     <input type="password" id="confirmer" name="confirmer" placeholder="Confirm Password" required>
+                                    <div class="matchpass"></div>
                                 </div>
                             </div>
                         </fieldset>
